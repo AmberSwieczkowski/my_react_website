@@ -6,7 +6,7 @@ import './MainSection.css';
 function MainSection() {
     return (
         <div className='main__container'>
-            <video src='/videos/video-1.mp4' autoPlay loop muted />
+            {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
             <h1>Adventure Awaits</h1>
             <p>Join the Love</p>
             <div className="main__btns">

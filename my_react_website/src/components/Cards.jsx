@@ -12,42 +12,42 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/img-9.jpg"
-              text="Ceremony and Reception Info and Itenarary"
+            src="/images/img-9.jpg"
+              text="Ceremony & Reception"
               label="Location"
               path="https://www.arkansas.com/paris/events/cameron-bluff-walk-2"
             />
             <CardItem
-              src="images/img-1.jpg"
+              src="/images/img-1.jpg"
               text="Pictures"
               label="Pictures"
               path="/"
             />
+            {/* <CardItem
+              src="/images/img-8.jpg"
+              text="Watch the Ceremoney Livestream!"
+              label="Livestream"
+              path="/"
+            /> */}
+          </ul>
+          <ul className="cards__items">
             <CardItem
-              src="images/img-2.jpg"
+              src="/images/img-2.jpg"
               text="Registries"
               label="Registries"
               path="/"
             />
-          </ul>
-          <ul className="cards__items">
-          <CardItem
-              src="images/img-8.jpg"
-              text="Can't Make it to Arkanasas? Watch the Ceremoney Livestream!"
-              label="Livestream"
-              path="/"
-            />
             <CardItem
-              src="images/img-4.jpg"
-              text="Don't see what you're looking for? Contact Us."
+              src="/images/img-4.jpg"
+              text="Contact"
               label="Contact"
               path="/contact"
             />
             <CardItem
-              src="images/img-3.jpg"
-              text="Répondez S'il Vous Plaît"
+              src="/images/img-3.jpg"
+              text="RSVP"
               label="RSVP"
-              path="/RSVP"
+              path="/Rsvp"
             />
           </ul>
         </div>

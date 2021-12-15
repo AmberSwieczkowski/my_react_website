@@ -60,21 +60,16 @@ function Navbar() {
             </li>
             <li className="nav__item">
               <Link to="/" className="nav__links" onClick={closeMobileMenu}>
-                Livestream
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/" className="nav__links" onClick={closeMobileMenu}>
                 Contact
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/RSVP" className="nav__links__mobile" onClick={closeMobileMenu}>
+              <Link to="/Rsvp" className="nav__links__mobile" onClick={closeMobileMenu}>
                 RSVP
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn__outline">RSVP</Button>}
+          {button && <Button buttonStyle="btn__primary">RSVP</Button>}
         </div>
       </nav>
     </>

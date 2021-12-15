@@ -11,7 +11,7 @@ function CardItem(props) {
           <figure className="cards__item__pic__wrap" data-category={props.label}>
             <img 
             src={props.src}
-            alt="Travel" 
+            alt={props.label} 
             className="cards__item__img" />
           </figure>
           <div className="cards__item__info">
