@@ -18,7 +18,7 @@ function Cards() {
               path="https://www.arkansas.com/paris/events/cameron-bluff-walk-2"
             />
             <CardItem
-              src="/images/img-1.jpg"
+              src="images/img-1.jpg"
               text="Pictures"
               label="Pictures"
               path="/"
