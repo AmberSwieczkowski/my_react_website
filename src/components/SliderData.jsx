@@ -104,8 +104,8 @@ export const SliderData = [
     alt: 'House',
   },
   {
-    title: 'House in Greece',
-    price: '$3,420,000',
+    title: 'Panama City Beach, Florida',
+    price: 'October 2021',
     path: '/homes',
     label: 'View Home',
     image: ImageTwelve,
