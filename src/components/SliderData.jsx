@@ -10,6 +10,9 @@ import ImageSeven from './images/us-7.jpeg';
 import ImageEight from './images/us-8.jpeg';
 import ImageNine from './images/us-9.jpeg';
 import ImageTen from './images/us-10.jpg';
+import ImageEleven from './images/us-11.JPG';
+import ImageTwelve from './images/us-12.JPG';
+import ImageThirteen from './images/us-13.JPG';
 
 export const SliderData = [
   {
@@ -90,6 +93,30 @@ export const SliderData = [
     path: '/homes',
     label: 'View Home',
     image: ImageTen,
+    alt: 'House',
+  },
+  {
+    title: 'House in Greece',
+    price: '$3,420,000',
+    path: '/homes',
+    label: 'View Home',
+    image: ImageEleven,
+    alt: 'House',
+  },
+  {
+    title: 'House in Greece',
+    price: '$3,420,000',
+    path: '/homes',
+    label: 'View Home',
+    image: ImageTwelve,
+    alt: 'House',
+  },
+  {
+    title: 'Long Island, New York',
+    price: 'October 2021',
+    path: '/homes',
+    label: 'View Home',
+    image: ImageThirteen,
     alt: 'House',
   }
 ];
