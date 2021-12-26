@@ -13,8 +13,10 @@ import ImageTen from './images/us-10.jpg';
 import ImageEleven from './images/us-11.JPG';
 import ImageTwelve from './images/us-12.JPG';
 import ImageThirteen from './images/us-13.JPG';
-import ImageFourteen from './images/us-14.JPG';
-import ImageFifteen from './images/us-15.jpeg';
+// import ImageFourteen from './images/us-14.JPG';
+// import ImageFifteen from './images/us-15.jpeg';
+import ImageSixteen from './images/us-16.jpeg';
+import ImageSeventeen from './images/us-17.jpeg';
 
 export const SliderData = [
   {
@@ -126,7 +128,7 @@ export const SliderData = [
     price: 'September 2021',
     path: '/homes',
     label: 'View Home',
-    image: ImageFourteen,
+    image: ImageSixteen,
     alt: 'House',
   },
   {
@@ -134,7 +136,7 @@ export const SliderData = [
     price: 'November 2021',
     path: '/homes',
     label: 'View Home',
-    image: ImageFifteen,
+    image: ImageSeventeen,
     alt: 'House',
   }
 ];
