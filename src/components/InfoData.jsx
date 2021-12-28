@@ -5,7 +5,7 @@ import ImageOne from './images/us-8.jpeg';
 import ImageTwo from './images/us-9.jpeg';
 
 export const InfoData = {
-  heading: 'Explore our beautiful homes',
+  heading: 'Join our adventure',
   paragraphOne:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima fugit esse nam consectetur sapiente voluptatibus porro quibusdam corporis obcaecati?',
   paragraphTwo:
