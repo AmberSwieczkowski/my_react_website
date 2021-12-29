@@ -12,6 +12,7 @@ function App() {
     <>
       <Main slides={SliderData}/>
       <InfoSection {...InfoData}/>
+      <InfoSection {...InfoDataTwo}/>
     </>
   );
 }

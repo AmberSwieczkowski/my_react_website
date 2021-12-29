@@ -1,8 +1,8 @@
 /** @format */
 
 // Vertical Images
-import ImageOne from './images/us-8.jpeg';
-import ImageTwo from './images/us-9.jpeg';
+import ImageOne from './images/us-14-vertical.jpeg';
+import ImageTwo from './images/us-15-vertical.jpeg';
 
 export const InfoData = {
   heading: 'Join our adventure',

@@ -36,7 +36,7 @@ const MainSlider = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
 
   &::before {
@@ -80,14 +80,15 @@ const MainContent = styled.div`
     font-size: clamp(1rem, 8vw, 2rem);
     font-weight: 400;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-    text-align: left;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
     margin-bottom: 0.8rem;
   }
 
   p {
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
   }
 `;
 
@@ -181,14 +182,14 @@ const Main = ({ slides }) => {
                   <MainContent>
                     <h1>{slide.title}</h1>
                     <p>{slide.price}</p>
-                    <Button
+                    {/* <Button
                       to={slide.path}
                       primary='true'
                       style={{ maxWidth: '160px' }}
                     >
                       {slide.label}
                       <Arrow />
-                    </Button>
+                    </Button> */}
                   </MainContent>
                 </MainSlider>
               )}
