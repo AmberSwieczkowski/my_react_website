@@ -16,6 +16,12 @@
     border: 1px solid var(--primary);
 }
 
+.btn__secondary {
+    background-color: #242424;
+    color: var(--primary);
+    border: 1px solid #242424;
+}
+
 .btn__outline {
     background-color: transparent;
     color: #fff;

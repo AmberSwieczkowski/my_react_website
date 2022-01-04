@@ -3,18 +3,18 @@
 import React from 'react';
 import InfoSection from '../InfoSection';
 import Main from '../Main';
-// import Navbar from './components/Navbar';
-import { InfoData, InfoDataTwo } from '../InfoData';
+import { InfoDataMarcin, InfoDataAmber, InfoDataBoth } from '../InfoData';
 import { SliderData } from '../SliderData';
 
-function App() {
+function Pictures() {
   return (
     <>
-      <Main slides={SliderData}/>
-      <InfoSection {...InfoData}/>
-      <InfoSection {...InfoDataTwo}/>
+      <Main slides={SliderData} />
+      <InfoSection {...InfoDataAmber} />
+      <InfoSection {...InfoDataMarcin} />
+      <InfoSection {...InfoDataBoth} />
     </>
   );
 }
 
-export default App;
+export default Pictures;
