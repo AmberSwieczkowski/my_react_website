@@ -10,7 +10,6 @@ function Home() {
             <MainSection />
             <Cards />
             <Footer />
-            <img src="https://i.ibb.co/MPJ9zdD/us-1.jpg" alt="us-1" border="0"></img>
         </>
     );
 }
