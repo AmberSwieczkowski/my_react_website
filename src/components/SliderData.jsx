@@ -1,6 +1,7 @@
 /** @format */
 
 import ImageOne from './images/us-1.jpeg';
+// import ImageOne from "https://i.ibb.co/MPJ9zdD/us-1.jpg";
 import ImageTwo from './images/us-2.JPG';
 import ImageThree from './images/us-3.jpeg';
 import ImageFour from './images/us-4.jpeg';
@@ -17,6 +18,7 @@ import ImageThirteen from './images/us-13.JPG';
 // import ImageFifteen from './images/us-15.jpeg';
 import ImageSixteen from './images/us-16.jpeg';
 import ImageSeventeen from './images/us-17.jpeg';
+
 
 export const SliderData = [
   {
