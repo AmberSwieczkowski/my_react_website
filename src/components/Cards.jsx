@@ -15,7 +15,7 @@ function Cards() {
               src='/images/us-5.jpeg'
               text='Ceremony & Reception'
               label='Location'
-              path='https://www.arkansas.com/paris/events/cameron-bluff-walk-2'
+              path='/location'
             />
             <CardItem
               src='/images/us-8.jpeg'
@@ -23,26 +23,14 @@ function Cards() {
               label='Pictures'
               path='/pictures'
             />
-            {/* <CardItem
-              src="/images/img-8.jpg"
-              text="Watch the Ceremoney Livestream!"
-              label="Livestream"
-              path="/"
-            /> */}
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='/images/us-2.jpg'
-              text='Registries'
-              label='Registries'
-              path='/'
-            />
-            <CardItem
-              src='/images/us-6.jpeg'
-              text='Contact'
-              label='Contact'
-              path='/contact'
-            />
+                src="/images/img-8.jpg"
+                text="Watch the Ceremoney Livestream!"
+                label="Livestream"
+                path="/"
+              />
             <CardItem
               src='/images/us-10.jpg'
               text='RSVP'

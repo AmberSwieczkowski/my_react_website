@@ -45,22 +45,12 @@ function Navbar() {
             </li>
             <li className="nav__item">
               <Link to="/location" className="nav__links" onClick={closeMobileMenu}>
-                Location
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/" className="nav__links" onClick={closeMobileMenu}>
-                Registries
+                Details
               </Link>
             </li>
             <li className="nav__item">
               <Link to="/pictures" className="nav__links" onClick={closeMobileMenu}>
                 Pictures
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/" className="nav__links" onClick={closeMobileMenu}>
-                Contact
               </Link>
             </li>
             <li className="nav__item">

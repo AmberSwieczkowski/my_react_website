@@ -8,31 +8,21 @@
 }
 
 .home,
-.contact,
 .location,
 .rsvp {
   display: flex;
-  height: 30vh;
+  height: 80vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
 }
 
-.contact {
-  background-image: url('images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
 .location {
-  background-image: url('images/img-2.jpg');
+  background-image: url('https://upload.travelawaits.com/ta/uploads/2021/04/cameron-bluff-overlook-at-moub85242-1024x672.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #242424;
+  color: #fff;
   font-size: 100px;
   /* border: 2px solid red; */
 }
