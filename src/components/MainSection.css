@@ -1,15 +1,6 @@
 /** @format */
-
-/* video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-} */
-
 .main__container {
-  background: url('images/img-home.jpg') center center/cover no-repeat;
+  background: url('https://www.arkansas.com/sites/default/files/styles/open_graph_teaser/public/2019-09/HERO_Cameron%20Bluff%20Mt%20Magazine.jpg?itok=SWnCv2le') center center/cover no-repeat;
   height: 80vh;
   width: 100%;
   display: flex;

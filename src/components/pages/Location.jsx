@@ -6,8 +6,10 @@ import LocationAccordion from "../LocationAccordion";
 export default function Location() {
     return (
         <>
+        <div>
             <h1 className='location'>Location</h1>
-            <LocationAccordion />
+        </div>
+        <LocationAccordion />
 
         </>
 

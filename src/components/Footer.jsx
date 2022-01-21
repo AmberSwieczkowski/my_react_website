@@ -11,17 +11,17 @@ function Footer() {
       <section className="footer__alerts">
         <p className="footer__alerts__heading">Join the Adventure</p>
         <p className="footer__alerts__text">
-          Click here to recieve alert updates. You can unsubscribe at any time.
+          Fun Fact: Amber made this website from scratch using React.
         </p>
         <div className="input__areas">
           <form>
             <input
-              type="number"
+              type="text"
               name="number"
-              placeholder="Your Number"
+              placeholder="This Does Nothing"
               className="footer__input"
             />
-            <Button buttonStyle="btn__outline">Subscribe</Button>
+            <Button buttonStyle="btn__outline">Click Me!</Button>
           </form>
         </div>
       </section>
@@ -29,11 +29,9 @@ function Footer() {
         <div className="footer__link__wrapper">
           <div className="footer__link__items">
             <Link to="/">Home</Link>
-            <Link to="/location">Location</Link>
-            <Link to="/rsvp">RSVP</Link>
-            <Link to="/">Registries</Link>
+            <Link to="/location">Details</Link>
             <Link to="/pictures">Pictures</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/rsvp">RSVP</Link>
           </div>
         </div>
       </div>
