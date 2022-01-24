@@ -15,7 +15,6 @@ function MainSection() {
           className='btns'
           buttonStyle='btn__outline'
           buttonSize='btn__large'
-          onClick={'./pages/Location.jsx'}
         >
           Location
         </Button>

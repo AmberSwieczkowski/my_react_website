@@ -28,11 +28,11 @@
 }
 
 .rsvp {
-  background-image: url('images/img-3.jpg');
+  background-image: url('https://plannedspontaneityhiking.files.wordpress.com/2013/07/img_3503.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #242424;
+  color: #fff;
   font-size: 100px;
   /* border: 2px solid red; */
 }
