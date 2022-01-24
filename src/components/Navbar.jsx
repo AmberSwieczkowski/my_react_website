@@ -54,12 +54,12 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/Rsvp" className="nav__links__mobile" onClick={closeMobileMenu}>
+              <Link to="/rsvp" className="nav__links__mobile" onClick={closeMobileMenu}>
                 RSVP
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn__primary">RSVP</Button>}
+          {button && <Button toPage='/rsvp' buttonStyle="btn__primary">RSVP</Button>}
         </div>
       </nav>
     </>

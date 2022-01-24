@@ -15,6 +15,7 @@ function MainSection() {
           className='btns'
           buttonStyle='btn__outline'
           buttonSize='btn__large'
+          toPage='/location'
         >
           Location
         </Button>
@@ -22,6 +23,7 @@ function MainSection() {
           className='btns'
           buttonStyle='btn__primary'
           buttonSize='btn__large'
+          toPage='/rsvp'
         >
           RSVP
           <i className='far fa-play-circle' />

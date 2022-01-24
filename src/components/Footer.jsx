@@ -21,7 +21,7 @@ function Footer() {
               placeholder="This Does Nothing"
               className="footer__input"
             />
-            <Button buttonStyle="btn__outline">Click Me!</Button>
+            <Button toPage='/rsvp' buttonStyle="btn__outline">RSVP</Button>
           </form>
         </div>
       </section>

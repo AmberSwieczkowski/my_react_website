@@ -5,6 +5,7 @@ import InfoSection from '../InfoSection';
 import Main from '../Main';
 import { InfoDataMarcin, InfoDataAmber, InfoDataBoth } from '../InfoData';
 import { SliderData } from '../SliderData';
+import Footer from '../Footer';
 
 function Pictures() {
   return (
@@ -13,6 +14,7 @@ function Pictures() {
       <InfoSection {...InfoDataAmber} />
       <InfoSection {...InfoDataMarcin} />
       <InfoSection {...InfoDataBoth} />
+      <Footer />
     </>
   );
 }
