@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from 'react';
-import { LocationData } from './LocationData';
+import { LocationData } from './LocationAccordionData';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons/lib';
 import { FiPlus, FiMinus } from 'react-icons/fi';

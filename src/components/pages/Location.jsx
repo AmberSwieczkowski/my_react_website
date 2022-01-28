@@ -2,9 +2,8 @@ import React from "react";
 import '../../App.css';
 import { Button } from "../Button";
 import Footer from "../Footer";
-import { InfoDataCeremony } from "../InfoData";
-import InfoSection from "../InfoSection";
-import LocationAccordion from "../LocationAccordion";
+import { InfoDataCeremony } from "../LocationSectionData";
+import LocationSection from "../LocationSection";
 
 export default function Location() {
     return (
@@ -12,8 +11,8 @@ export default function Location() {
         <div>
             <h1 className='location'>Location</h1>
         </div>
-        <LocationAccordion />
-        <InfoSection {...InfoDataCeremony}/>
+        {/* <LocationAccordion /> */}
+        <LocationSection {...InfoDataCeremony}/>
         <Footer />
 
         </>
