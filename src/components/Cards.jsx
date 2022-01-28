@@ -35,7 +35,7 @@ function Cards() {
               src='/images/us-10.jpg'
               text='RSVP'
               label='RSVP'
-              path='/Rsvp'
+              path='/rsvp'
             />
           </ul>
         </div>
