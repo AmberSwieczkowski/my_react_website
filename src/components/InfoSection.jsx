@@ -94,7 +94,7 @@ const InfoSection = ({
           </Button>
         </ColumnLeft>
         <ColumnRight>
-          <img src={image} alt='home' />
+          <img src={image} alt='Cannot be displayed' />
         </ColumnRight>
       </Container>
     </Section>
