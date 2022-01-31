@@ -14,6 +14,9 @@
   height: 80vh;
   align-items: center;
   justify-content: center;
+}
+
+.home {
   font-size: 3rem;
 }
 
@@ -22,17 +25,18 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 50vh;
   color: #fff;
   font-size: 100px;
-  /* border: 2px solid red; */
+  /* border: 2px solid blue; */
+}
+
+.btn_print_container {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
 }
 
 .rsvp {
-  background-image: url('https://plannedspontaneityhiking.files.wordpress.com/2013/07/img_3503.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+  background: url('https://www.arkansas.com/sites/default/files/styles/open_graph_teaser/public/2019-09/HERO_Cameron%20Bluff%20Mt%20Magazine.jpg?itok=SWnCv2le') center center/cover no-repeat;
+  background-color: #131313;
   /* border: 2px solid red; */
 }

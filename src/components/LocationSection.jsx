@@ -12,10 +12,10 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  padding: 1rem calc((100vw - 1300px) / 2);
+  padding: 1rem calc((100vw - 1300px) / 3);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
   // border: 3px solid red;
 
   @media (max-width: 768px) {
@@ -31,6 +31,8 @@ const ColumnLeft = styled.div`
   line-height: 1.4;
   padding: 1rem 2rem;
   order: ${({ reverse }) => (reverse ? '2' : '1')};
+  text-align: center;
+  margin: auto;
 
   h1 {
     margin-bottom: 1rem;
@@ -42,8 +44,41 @@ const ColumnLeft = styled.div`
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
-  p {
-    margin-bottom: 2rem;
+  // p {
+  //   margin-bottom: 2rem;
+  // }
+`;
+
+const ColumnCenter = styled.div`
+  padding: 1rem 2rem;
+  order: ${({ reverse }) => (reverse ? '1' : '2')};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.4;
+  order: ${({ reverse }) => (reverse ? '2' : '1')};
+  text-align: center;
+  margin: auto;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 6vw, 1.5rem);
+  }
+
+  // p {
+  //   margin-bottom: 2rem;
+  // }
+
+  @media (max-width: 768px) {
+    order: ${({ reverse }) => (reverse ? '2' : '1')};
+  }
+
   }
 `;
 
@@ -55,8 +90,9 @@ const ColumnRight = styled.div`
   justify-content: center;
   align-items: flex-start;
   line-height: 1.4;
-  padding: 1rem 2rem;
   order: ${({ reverse }) => (reverse ? '2' : '1')};
+  text-align: center;
+  margin: auto;
 
   h1 {
     margin-bottom: 1rem;
@@ -68,9 +104,9 @@ const ColumnRight = styled.div`
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
-  p {
-    margin-bottom: 2rem;
-  }
+  // p {
+  //   margin-bottom: 2rem;
+  // }
 
   @media (max-width: 768px) {
     order: ${({ reverse }) => (reverse ? '2' : '1')};
@@ -81,11 +117,12 @@ const ColumnRight = styled.div`
 
 const LocationSection = ({
   title,
-  name,
-  dob,
+  time,
+  locationSpecific,
+  location1,
+  location2,
   parents,
   siblings,
-  buttonLabel,
   reverse,
   image,
 }) => {
@@ -93,24 +130,18 @@ const LocationSection = ({
     <Section>
       <Container>
         <ColumnLeft>
-          <h1>{title}</h1>
-          <h2>{name}</h2>
-          <p>{dob}</p>
-          <p>{parents}</p>
+          <h2>{time}</h2>
           <p>{siblings}</p>
-          <Button to='/' buttonStyle='btn__secondary'>
-            {buttonLabel}
-          </Button>
         </ColumnLeft>
-        <ColumnRight>
+        <ColumnCenter>
           <h1>{title}</h1>
-          <h2>{name}</h2>
-          <p>{dob}</p>
+        </ColumnCenter>
+        <ColumnRight>
+          <p>{locationSpecific}</p>
+          <p>{location1}</p>
+          <p>{location2}</p>
           <p>{parents}</p>
           <p>{siblings}</p>
-          <Button to='/' buttonStyle='btn__secondary'>
-            {buttonLabel}
-          </Button>
         </ColumnRight>
       </Container>
     </Section>

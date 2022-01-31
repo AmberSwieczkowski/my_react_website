@@ -14,7 +14,7 @@ function Cards() {
             <CardItem
               src='/images/us-5.jpeg'
               text='Ceremony & Reception'
-              label='Location'
+              label='Details'
               path='/location'
             />
             <CardItem
@@ -23,14 +23,14 @@ function Cards() {
               label='Pictures'
               path='/pictures'
             />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
+          {/* </ul>
+          <ul className='cards__items'> */}
+            {/* <CardItem
                 src="/images/img-8.jpg"
-                text="Watch the Ceremoney Livestream!"
+                text="Watch the Livestream!"
                 label="Livestream"
                 path="/"
-              />
+              /> */}
             <CardItem
               src='/images/us-10.jpg'
               text='RSVP'

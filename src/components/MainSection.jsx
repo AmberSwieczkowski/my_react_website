@@ -17,7 +17,7 @@ function MainSection() {
           buttonSize='btn__large'
           toPage='/location'
         >
-          Location
+          Details
         </Button>
         <Button
           className='btns'
@@ -26,7 +26,6 @@ function MainSection() {
           toPage='/rsvp'
         >
           RSVP
-          <i className='far fa-play-circle' />
         </Button>
       </div>
     </div>

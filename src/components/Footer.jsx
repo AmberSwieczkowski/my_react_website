@@ -10,20 +10,12 @@ function Footer() {
     <div className="footer__container">
       <section className="footer__alerts">
         <p className="footer__alerts__heading">Join the Adventure</p>
+        <div className="input__areas">
+            <Button toPage='/rsvp' buttonStyle="btn__outline">RSVP</Button>
+        </div>
         <p className="footer__alerts__text">
           Fun Fact: Amber made this website from scratch using React.
         </p>
-        <div className="input__areas">
-          <form>
-            <input
-              type="text"
-              name="number"
-              placeholder="This Does Nothing"
-              className="footer__input"
-            />
-            <Button toPage='/rsvp' buttonStyle="btn__outline">RSVP</Button>
-          </form>
-        </div>
       </section>
       <div className="footer__links">
         <div className="footer__link__wrapper">
@@ -31,7 +23,6 @@ function Footer() {
             <Link to="/">Home</Link>
             <Link to="/location">Details</Link>
             <Link to="/pictures">Pictures</Link>
-            <Link to="/rsvp">RSVP</Link>
           </div>
         </div>
       </div>

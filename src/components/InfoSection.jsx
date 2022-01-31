@@ -62,6 +62,7 @@ const ColumnRight = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
 
     @media (max-width: 768px) {
       width: 90%;
@@ -89,9 +90,9 @@ const InfoSection = ({
           <p>{dob}</p>
           <p>{parents}</p>
           <p>{siblings}</p>
-          <Button to='/' buttonStyle='btn__secondary'>
+          {/* <Button to='/' buttonStyle='btn__secondary'>
             {buttonLabel}
-          </Button>
+          </Button> */}
         </ColumnLeft>
         <ColumnRight>
           <img src={image} alt='Cannot be displayed' />
