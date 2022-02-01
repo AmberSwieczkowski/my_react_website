@@ -45,15 +45,52 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <form name='rsvp' className='form' onSubmit={handleSubmit} netlify netlify-honeypot="bot-field" hidden>
+      <div className='form-inputs'>
+        <input type="hidden" name="form-name" value="rsvp" />
+        <input
+          id='firstname'
+          type='text'
+          name='firstname'
+          className='form-input'
+          placeholder='Enter Your First Name'
+          value={values.firstname}
+          onChange={handleChange}
+        />
+      </div>
+      <div className='form-inputs'>
+        <input
+          id='lastname'
+          type='text'
+          name='lastname'
+          className='form-input'
+          placeholder='Enter Your Last Name'
+          value={values.lastname}
+          onChange={handleChange}
+        />
+      </div>
+      <div className='form-inputs'>
+        <input
+          id='email'
+          type='email'
+          name='email'
+          className='form-input'
+          placeholder='Enter your Email'
+          value={values.email}
+          onChange={handleChange}
+        />
+      </div>
+      <div className='form-inputs'>
+        <input
+          id='guests'
+          type='text'
+          name='guests'
+          className='form-input'
+          placeholder='Name Anyone You Are Bringing or Enter None'
+          value={values.guests}
+          onChange={handleChange}
+        />
+      </div>
+    </form>
   </body>
 </html>
