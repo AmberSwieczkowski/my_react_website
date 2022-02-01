@@ -64,8 +64,8 @@
   transition: 250ms;
 }
 
-.btn__xlarge:hover {
+/* .btn__xlarge:hover {
     border-left: 6px solid #fff;
     border-right: 6px solid #fff;
     transition: all 0.2s ease-out;
-}
+} */

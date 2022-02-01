@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .home,
@@ -36,7 +36,15 @@
 }
 
 .rsvp {
-  background: url('https://www.arkansas.com/sites/default/files/styles/open_graph_teaser/public/2019-09/HERO_Cameron%20Bluff%20Mt%20Magazine.jpg?itok=SWnCv2le') center center/cover no-repeat;
+  background: url('https://www.arkansas.com/sites/default/files/styles/open_graph_teaser/public/2019-09/HERO_Cameron%20Bluff%20Mt%20Magazine.jpg?itok=SWnCv2le')
+    center center/cover no-repeat;
   background-color: #131313;
   /* border: 2px solid red; */
+}
+
+@media (max-width: 1200px) {
+  .rsvp {
+    height: 100vh;
+    background-size: cover;
+  }
 }

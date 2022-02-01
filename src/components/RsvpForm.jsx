@@ -14,7 +14,7 @@ const RsvpForm = () => {
   return (
     <>
     <div className="form-container">
-        <span className="close-btn">x</span>
+        <a href='/' className="close-btn">x</a>
         <div className="form-content-left">
             <img src="./images/us-8.jpeg" alt="Marcin and Amber" className="form-img" />
         </div>

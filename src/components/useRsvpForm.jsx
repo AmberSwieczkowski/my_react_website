@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from 'react';
 
-const useRsvpForm = validate => {
+const useRsvpForm = (callback, validate) => {
   const [values, setValues] = useState({
-    username: '',
+    firstname: '',
+    lastname: '',
     email: '',
-    password: '',
-    password2: '',
+    guests: '',
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -23,9 +23,15 @@ const useRsvpForm = validate => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setErrors(validate(values))
-    setIsSubmitting(true)
+    setErrors(validate(values));
+    setIsSubmitting(true);
   };
+
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && isSubmitting) {
+      callback();
+    }
+  }, [errors]);
 
   return { handleChange, values, handleSubmit, errors };
 };

@@ -23,8 +23,8 @@ export const InfoDataMarcin = {
   name: 'Marcin',
   dob: 'Born in New York on March 23',
   parents:
-    'Parents: Jerry and Iwona Swieczkowski | Married 32 years | Kings Park, New York.',
-  siblings: 'Younger Sister: Eliza, Boston, MA.',
+    'Parents: Jerry and Iwona Swieczkowski | Married 32 years | Currently in New York.',
+  siblings: 'Younger Sister: Eliza',
   buttonLabel: 'More',
   image: ImageMarcin,
   reverse: false,

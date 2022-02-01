@@ -14,21 +14,36 @@ const RsvpFormSignup = ({ submitForm }) => {
   return (
     <div className='form-content-right'>
       <form className='form' onSubmit={handleSubmit}>
-        <h1>RSVP by filling out the information below.</h1>
+        <h1>Reserve Your Spot!</h1>
         <div className='form-inputs'>
-          <label htmlFor='username' className='form-label'>
-            Username
+          <label htmlFor='firstname' className='form-label'>
+            First Name
           </label>
           <input
-            id='username'
+            id='firstname'
             type='text'
-            name='username'
+            name='firstname'
             className='form-input'
-            placeholder='Enter your username'
-            value={values.username}
+            placeholder='Enter Your First Name'
+            value={values.firstname}
             onChange={handleChange}
           />
-          {errors.username && <p>{errors.username}</p>}
+          {errors.firstname && <p>{errors.firstname}</p>}
+        </div>
+        <div className='form-inputs'>
+          <label htmlFor='lastname' className='form-label'>
+            Last Name
+          </label>
+          <input
+            id='lastname'
+            type='text'
+            name='lastname'
+            className='form-input'
+            placeholder='Enter Your Last Name'
+            value={values.lastname}
+            onChange={handleChange}
+          />
+          {errors.lastname && <p>{errors.lastname}</p>}
         </div>
         <div className='form-inputs'>
           <label htmlFor='email' className='form-label'>
@@ -39,47 +54,32 @@ const RsvpFormSignup = ({ submitForm }) => {
             type='email'
             name='email'
             className='form-input'
-            placeholder='Enter your email'
+            placeholder='Enter your Email'
             value={values.email}
             onChange={handleChange}
           />
           {errors.email && <p>{errors.email}</p>}
         </div>
         <div className='form-inputs'>
-          <label htmlFor='password' className='form-label'>
-            Password
+          <label htmlFor='guests' className='form-label'>
+            Additional People
           </label>
           <input
-            id='password'
-            type='password'
-            name='password'
+            id='guests'
+            type='text'
+            name='guests'
             className='form-input'
-            placeholder='Enter your password'
-            value={values.password}
+            placeholder='Name Anyone You Are Bringing or Enter None'
+            value={values.guests}
             onChange={handleChange}
           />
-          {errors.password && <p>{errors.username}</p>}
-        </div>
-        <div className='form-inputs'>
-          <label htmlFor='password2' className='form-label'>
-            Confirm Password
-          </label>
-          <input
-            id='password2'
-            type='password'
-            name='password2'
-            className='form-input'
-            placeholder='Enter your password2'
-            value={values.password2}
-            onChange={handleChange}
-          />
-          {errors.password2 && <p>{errors.password2}</p>}
+          {errors.guests && <p>{errors.guests}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
           RSVP
         </button>
         <span className='form-input-rsvped'>
-        <a href='.'>Change Your RSVP Status Here</a>
+          {/* <a href='.'>Change Your RSVP Status Here</a> */}
         </span>
       </form>
     </div>
