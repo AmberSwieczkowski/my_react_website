@@ -13,7 +13,7 @@ const RsvpFormSignup = ({ submitForm }) => {
 
   return (
     <div className='form-content-right'>
-      <form name='rsvp' className='form' onSubmit={handleSubmit} method='post'>
+      <form name='rsvp' className='form' method='post'>
         <input type='hidden' name='form-name' value='rsvp' />
         <h1>Reserve Your Spot!</h1>
         <div className='form-inputs'>
