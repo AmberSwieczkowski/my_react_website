@@ -45,52 +45,19 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <form name='rsvp' className='form' onSubmit={handleSubmit} netlify netlify-honeypot="bot-field" hidden>
-      <div className='form-inputs'>
-        <input type="hidden" name="form-name" value="rsvp" />
-        <input
-          id='firstname'
-          type='text'
-          name='firstname'
-          className='form-input'
-          placeholder='Enter Your First Name'
-          value={values.firstname}
-          onChange={handleChange}
-        />
-      </div>
-      <div className='form-inputs'>
-        <input
-          id='lastname'
-          type='text'
-          name='lastname'
-          className='form-input'
-          placeholder='Enter Your Last Name'
-          value={values.lastname}
-          onChange={handleChange}
-        />
-      </div>
-      <div className='form-inputs'>
-        <input
-          id='email'
-          type='email'
-          name='email'
-          className='form-input'
-          placeholder='Enter your Email'
-          value={values.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div className='form-inputs'>
-        <input
-          id='guests'
-          type='text'
-          name='guests'
-          className='form-input'
-          placeholder='Name Anyone You Are Bringing or Enter None'
-          value={values.guests}
-          onChange={handleChange}
-        />
-      </div>
+    <form
+      name="rsvp"
+      className="form"
+      onSubmit="{handleSubmit}"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="rsvp" />
+      <input type="text" name="firstname" textarea="firstname"/>
+      <input type="text" name="lastname" />
+      <input type="email" name="email" />
+      <input type="text" name="guests" />
     </form>
   </body>
 </html>

@@ -15,7 +15,7 @@ export default function validateRsvp(values) {
 
   // Email
   if (!values.email) {
-    errors.email = 'Email required';
+    errors.email = 'Email Required';
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
     errors.email = 'Email Address is Invalid';
   }
