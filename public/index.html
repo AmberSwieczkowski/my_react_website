@@ -45,16 +45,8 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <form
-      name="rsvp"
-      className="form"
-      onSubmit="{handleSubmit}"
-      netlify
-      netlify-honeypot="bot-field"
-      hidden
-    >
-      <input type="hidden" name="form-name" value="rsvp" />
-      <input type="text" name="firstname" textarea="firstname"/>
+    <form name="rsvp" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstname" />
       <input type="text" name="lastname" />
       <input type="email" name="email" />
       <input type="text" name="guests" />
