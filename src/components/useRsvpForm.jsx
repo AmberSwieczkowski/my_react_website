@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const useRsvpForm = (callback, validate) => {
+const useRsvpForm = (validate) => {
   const [values, setValues] = useState({
     firstname: '',
     lastname: '',
@@ -21,17 +21,40 @@ const useRsvpForm = (callback, validate) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     setErrors(validate(values));
     setIsSubmitting(true);
+    e.preventDefault();
+  };
+
+  // useEffect(() => {
+  //   if (Object.keys(errors).length === 0 && isSubmitting) {
+  //     callback();
+  //   }
+  // }, [errors]);
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&');
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback();
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'rsvp', ...values }),
+      })
+        // .then(() => alert('Success!'))
+        .then(() => setIsSubmitting(false))
+        .then(() =>
+          setValues({ firstname: '', lastname: '', email: '', guests: '' })
+        )
+        .catch((error) => alert(error));
     }
-  }, [errors]);
+  }, [errors, values, isSubmitting]);
 
   return { handleChange, values, handleSubmit, errors };
 };
