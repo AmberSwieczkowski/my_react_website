@@ -1,10 +1,10 @@
 /** @format */
 
 import React from 'react';
-import RsvpFormSignup from './RsvpFormSignup';
+import RsvpFormSuccess from './RsvpFormSuccess';
 import './RsvpForm.css';
 
-const RsvpForm = () => {
+const RsvpFormSubmitted = () => {
   return (
     <>
     <div className="form-container">
@@ -12,10 +12,10 @@ const RsvpForm = () => {
         <div className="form-content-left">
             <img src="./images/us-8.jpeg" alt="Marcin and Amber" className="form-img" />
         </div>
-        <RsvpFormSignup />
+        <RsvpFormSuccess />
     </div>
     </>
   );
 };
 
-export default RsvpForm;
+export default RsvpFormSubmitted;

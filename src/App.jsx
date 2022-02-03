@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Location from './components/pages/Location';
 import Pictures from './components/pages/Pictures';
 import Rsvp from './components/pages/Rsvp';
+import RsvpSubmitted from './components/pages/RsvpSubmitted';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/location' element={<Location />}></Route>
       <Route path='/pictures' element={<Pictures />}></Route>
       <Route path='/rsvp' element={<Rsvp />}></Route>
+      <Route path='/rsvpSubmitted' element={<RsvpSubmitted />}></Route>
     </Routes>
     </Router>
     </>

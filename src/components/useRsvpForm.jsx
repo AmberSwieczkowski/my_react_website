@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const useRsvpForm = (validate) => {
+const useRsvpForm = validate => {
   const [values, setValues] = useState({
     firstname: '',
     lastname: '',
@@ -12,7 +12,7 @@ const useRsvpForm = (validate) => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
     setValues({
       ...values,
@@ -20,19 +20,13 @@ const useRsvpForm = (validate) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     setErrors(validate(values));
     setIsSubmitting(true);
     e.preventDefault();
   };
 
-  // useEffect(() => {
-  //   if (Object.keys(errors).length === 0 && isSubmitting) {
-  //     callback();
-  //   }
-  // }, [errors]);
-
-  const encode = (data) => {
+  const encode = data => {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
