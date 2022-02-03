@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const useRsvpForm = validate => {
+const useRsvpForm = (callback, validate) => {
   const [values, setValues] = useState({
     firstname: '',
     lastname: '',
@@ -21,9 +21,9 @@ const useRsvpForm = validate => {
   };
 
   const handleSubmit = e => {
+    e.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
-    e.preventDefault();
   };
 
   const encode = data => {
@@ -42,6 +42,7 @@ const useRsvpForm = validate => {
         body: encode({ 'form-name': 'rsvp', ...values }),
       })
         // .then(() => alert('Success!'))
+        .then(() => callback())
         .then(() => setIsSubmitting(false))
         .then(() =>
           setValues({ firstname: '', lastname: '', email: '', guests: '' })
