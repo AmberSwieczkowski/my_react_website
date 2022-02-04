@@ -5,14 +5,31 @@ import '../../App.css';
 import { Button } from '../Button';
 import '../Button.css';
 import Footer from '../Footer';
-import { InfoDataCeremony, InfoDataReception } from '../LocationSectionData';
+import {
+  InfoDataCeremony,
+  InfoDataReception,
+  InfoDetails,
+} from '../LocationSectionData';
 import LocationSection from '../LocationSection';
-import '../Printer.css'
+import '../Printer.css';
+import { Link } from 'react-router-dom';
 
 export default function Location() {
   let print = () => {
     window.print();
   };
+
+  let registry = () => {
+    window.open('https://www.amazon.com/wedding/share/marcin-amber', '_blank');
+  };
+
+  let thePark = () => {
+    window.open(
+      'https://www.arkansasstateparks.com/parks/mount-magazine-state-park',
+      '_blank'
+    );
+  };
+  
   return (
     <>
       <div className='location'></div>
@@ -26,13 +43,32 @@ export default function Location() {
         >
           Print This Page
         </Button>
+        <Button
+          toPage='/location'
+          buttonStyle='btn__print'
+          className='btn__print'
+          buttonSize='btn__xlarge'
+          onClick={thePark}
+        >
+          Mount Magazine
+        </Button>
+        <Button
+          toPage='/location'
+          buttonStyle='btn__print'
+          className='btn__print'
+          buttonSize='btn__xlarge'
+          onClick={registry}
+        >
+          Registry
+        </Button>
       </div>
-      <div className='printable' media='print'>
-      <LocationSection {...InfoDataCeremony} />
-      <LocationSection {...InfoDataReception} />
+      <div className='printable'>
+        <LocationSection {...InfoDataCeremony} />
+        <LocationSection {...InfoDataReception} />
+        <LocationSection {...InfoDetails} />
       </div>
       <Footer />
-      <p className="print__only">marcin-amber.com</p>
+      <p className='print__only'>marcin-amber.com</p>
     </>
   );
 }

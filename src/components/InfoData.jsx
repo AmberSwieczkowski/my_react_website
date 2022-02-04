@@ -9,8 +9,9 @@ export const InfoDataAmber = {
   title: 'The Bride',
   name: 'Amber',
   dob: 'Born in Texas on December 31',
-  parents:
-    'Parents: Monroe and Denise Michaelis | Married 36 years | Currently in Louisiana.',
+  parents: 'Parents: Monroe and Denise Michaelis',
+  marriedSince: '...Married since 1986',
+  parentsLocation: '...Currently in Louisiana',
   siblings: 'Younger Siblings: Marcus, James, Jazmine, Jonathan',
   buttonLabel: 'More',
   image: ImageAmber,
@@ -22,8 +23,9 @@ export const InfoDataMarcin = {
   title: 'The Groom',
   name: 'Marcin',
   dob: 'Born in New York on March 23',
-  parents:
-    'Parents: Jerry and Iwona Swieczkowski | Married 32 years | Currently in New York.',
+  parents: 'Parents: Jerry and Iwona Swieczkowski',
+  marriedSince: '...Married since 1991',
+  parentsLocation: '...Currently in New York',
   siblings: 'Younger Sister: Eliza',
   buttonLabel: 'More',
   image: ImageMarcin,

@@ -21,4 +21,12 @@ export const InfoDataReception = {
   delay: 100,
 };
 
+export const InfoDetails = {
+  time: 'Dress Code:',
+  dressCode: 'Semi-Formal',
+  locationSpecific: 'All Events Are Outdoors',
+  location1: 'Expected High Temperature 80F',
+  location2: 'Expected Low Temperature 45F'
+}
+
 

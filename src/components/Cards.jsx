@@ -5,6 +5,16 @@ import CardItem from './CardItem';
 import './Cards.css';
 
 function Cards() {
+  let registry = () => {
+    window.open('https://www.amazon.com/wedding/share/marcin-amber', '_blank');
+  };
+
+  let thePark = () => {
+    window.open(
+      'https://www.arkansasstateparks.com/parks/mount-magazine-state-park',
+      '_blank'
+    );
+  };
   return (
     <div className='cards'>
       <h1>Wedding Details</h1>
@@ -23,7 +33,29 @@ function Cards() {
               label='Pictures'
               path='/pictures'
             />
-          {/* </ul>
+            <CardItem
+              src='/images/us-6.jpeg'
+              text='RSVP'
+              label='RSVP'
+              path='/rsvp'
+            />
+            {/* <CardItem
+              src='/images/us-10.JPG'
+              text='Registry'
+              label='Amazon'
+              path='/'
+              onClick={registry}
+            /> */}
+          </ul>
+          <ul className='cards__items'>
+            {/* <CardItem
+              src='/images/us-2.JPG'
+              text='Mount Magazine'
+              label='Paris'
+              path='/'
+              onClick={thePark}
+            /> */}
+            {/* </ul>
           <ul className='cards__items'> */}
             {/* <CardItem
                 src="/images/img-8.jpg"
@@ -31,12 +63,12 @@ function Cards() {
                 label="Livestream"
                 path="/"
               /> */}
-            <CardItem
-              src='/images/us-10.jpg'
+            {/* <CardItem
+              src='/images/us-6.jpeg'
               text='RSVP'
               label='RSVP'
               path='/rsvp'
-            />
+            /> */}
           </ul>
         </div>
       </div>

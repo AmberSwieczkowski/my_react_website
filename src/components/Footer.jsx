@@ -6,6 +6,16 @@ import { Button } from "./Button";
 import "./Footer.css";
 
 function Footer() {
+  let registry = () => {
+    window.open('https://www.amazon.com/wedding/share/marcin-amber', '_blank');
+  };
+
+  let thePark = () => {
+    window.open(
+      'https://www.arkansasstateparks.com/parks/mount-magazine-state-park',
+      '_blank'
+    );
+  };
   return (
     <div className="footer__container no__print">
       <section className="footer__alerts">
@@ -23,6 +33,8 @@ function Footer() {
             <Link to="/">Home</Link>
             <Link to="/location">Details</Link>
             <Link to="/pictures">Pictures</Link>
+            <Link to="/" onClick={registry}>Registry</Link>
+            <Link to="/" onClick={thePark}>Mt Magazine</Link>
           </div>
         </div>
       </div>

@@ -16,26 +16,32 @@
 
   .printable {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     margin-bottom: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     background-color: #fff;
-    height: 100%;
+    height: 80%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     margin: 0;
-    padding: 15px;
-    font-size: 14px;
-    line-height: 18px;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 16px;
   }
 
-  /* .print__only {
+  h1 {
+    font-size: 12px;
+  }
+
+  .print__only {
+    display: block;
     position: fixed;
     text-align: center;
     bottom: 30px;
     width: 100%;
-  } */
+  }
 }

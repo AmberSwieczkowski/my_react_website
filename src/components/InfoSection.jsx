@@ -76,6 +76,8 @@ const InfoSection = ({
   name,
   dob,
   parents,
+  marriedSince,
+  parentsLocation,
   siblings,
   buttonLabel,
   reverse,
@@ -89,6 +91,8 @@ const InfoSection = ({
           <h2>{name}</h2>
           <p>{dob}</p>
           <p>{parents}</p>
+          <p>{marriedSince}</p>
+          <p>{parentsLocation}</p>
           <p>{siblings}</p>
           {/* <Button to='/' buttonStyle='btn__secondary'>
             {buttonLabel}

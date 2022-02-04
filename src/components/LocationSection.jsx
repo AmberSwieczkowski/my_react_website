@@ -125,30 +125,29 @@ const LocationSection = ({
   locationSpecific,
   location1,
   location2,
-  parents,
-  siblings,
+  dressCode,
   reverse,
   image,
 }) => {
   return (
+    <>
     <Section>
       <Container>
         <ColumnLeft>
           <h2>{time}</h2>
-          <p>{siblings}</p>
         </ColumnLeft>
         <ColumnCenter>
           <h1>{title}</h1>
+      <h1>{dressCode}</h1>
         </ColumnCenter>
         <ColumnRight>
           <p>{locationSpecific}</p>
           <p>{location1}</p>
           <p>{location2}</p>
-          <p>{parents}</p>
-          <p>{siblings}</p>
         </ColumnRight>
       </Container>
     </Section>
+    </>
   );
 };
 

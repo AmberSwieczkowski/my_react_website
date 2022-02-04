@@ -134,7 +134,7 @@ export const SliderData = [
     alt: 'House',
   },
   {
-    title: 'Random Forrest, Arkansas',
+    title: 'Random Forest, Arkansas',
     price: 'September 2021',
     path: '/homes',
     label: '',
