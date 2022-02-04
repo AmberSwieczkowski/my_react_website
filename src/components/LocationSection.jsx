@@ -37,6 +37,10 @@ const ColumnLeft = styled.div`
   h1 {
     margin-bottom: 1rem;
     font-size: clamp(2rem, 6vw, 2.5rem);
+
+    @media print {
+      font-size: 12px;
+    }
   }
 
   h2 {

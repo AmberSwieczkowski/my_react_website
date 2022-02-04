@@ -1,0 +1,41 @@
+/** @format */
+
+.print__only {
+  display: none;
+  /* position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: red; */
+}
+
+@media print {
+  .no__print {
+    display: none;
+  }
+
+  .printable {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: none;
+    border: 1px solid black;
+
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /* .print__only {
+    position: fixed;
+    text-align: center;
+    bottom: 30px;
+    width: 100%;
+  } */
+}

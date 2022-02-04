@@ -27,7 +27,7 @@ export const Button = ({
   const checkToPage = PAGES.includes(toPage) ? toPage : PAGES[0];
 
   return (
-    <Link to={checkToPage} style={{textDecoration: 'none'}} className='btn__mobile'>
+    <Link to={checkToPage} style={{textDecoration: 'none'}} className='btn__mobile no__print'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}

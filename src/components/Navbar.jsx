@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar no__print">
         <div className="navbar__container">
           <Link to="/" className="navbar__logo" onClick={closeMobileMenu}>
             AMBER&MARCIN

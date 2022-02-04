@@ -7,7 +7,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer__container">
+    <div className="footer__container no__print">
       <section className="footer__alerts">
         <p className="footer__alerts__heading">Join the Adventure</p>
         <div className="input__areas">
