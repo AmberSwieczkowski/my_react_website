@@ -6,16 +6,22 @@ import validate from './validateRsvp';
 import './RsvpForm.css';
 
 const RsvpFormSignup = ({ submitForm }) => {
-  const { handleChange, values, handleSubmit, errors } = useRsvpForm(
+  const { handleChange, handleStatus, values, handleSubmit, errors } = useRsvpForm(
     submitForm,
     validate
   );
 
   return (
     <div className='form-content-right'>
-      <form name='rsvp' className='form' onSubmit={handleSubmit} method='POST' action='/'>
+      <form
+        name='rsvp'
+        className='form'
+        onSubmit={handleSubmit}
+        method='POST'
+        action='/'
+      >
         <input type='hidden' name='form-name' value='rsvp' />
-        <h1>Reserve Your Spot!</h1>
+        {/* <h1>RSVP Form</h1> */}
         <div className='form-inputs'>
           <label htmlFor='firstname' className='form-label'>
             First Name
@@ -70,11 +76,38 @@ const RsvpFormSignup = ({ submitForm }) => {
             type='text'
             name='guests'
             className='form-input'
-            placeholder='Name Anyone You Are Bringing or Enter None'
+            placeholder='Enter None or Name Anyone You Are Bringing'
             value={values.guests}
             onChange={handleChange}
           />
           {errors.guests && <p>{errors.guests}</p>}
+        </div>
+        <div className='checkboxLabel'>
+          <input
+            id='coming'
+            type='checkbox'
+            name='coming'
+            className='checkbox'
+            value={values.coming}
+            onChange={handleStatus}
+          />
+          <label htmlFor='notComing' className='form-label'>
+            We'll be there!
+          </label>
+        </div>
+        <div className='checkboxLabel'>
+          <input
+            id='notComing'
+            type='checkbox'
+            name='notComing'
+            className='checkbox'
+            value={values.notComing}
+            onChange={handleStatus}
+          />
+          <label htmlFor='notComing' className='form-label'>
+            Sadly, we are unable to attend.
+          </label>
+          {errors.coming && <p>{errors.coming}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
           RSVP

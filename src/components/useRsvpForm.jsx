@@ -8,6 +8,8 @@ const useRsvpForm = (callback, validate) => {
     lastname: '',
     email: '',
     guests: '',
+    coming: false,
+    notComing: false
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,6 +21,21 @@ const useRsvpForm = (callback, validate) => {
       [name]: value,
     });
   };
+
+  const handleStatus = e => {
+    const { name } = e.target;
+    if (e.target.checked) {
+      setValues({
+        ...values,
+        [name]: true,
+      })
+    } else {
+      setValues({
+        ...values,
+        [name]: false,
+      })
+    }
+  }
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -45,13 +62,13 @@ const useRsvpForm = (callback, validate) => {
         .then(() => callback())
         .then(() => setIsSubmitting(false))
         .then(() =>
-          setValues({ firstname: '', lastname: '', email: '', guests: '' })
+          setValues({ firstname: '', lastname: '', email: '', guests: '', coming: false, notComing: false })
         )
         .catch((error) => alert(error));
     }
   }, [errors, values, isSubmitting]);
 
-  return { handleChange, values, handleSubmit, errors };
+  return { handleChange, handleStatus, values, handleSubmit, errors };
 };
 
 export default useRsvpForm;

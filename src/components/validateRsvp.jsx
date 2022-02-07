@@ -27,5 +27,12 @@ export default function validateRsvp(values) {
       errors.guests = 'Please Enter Names'
   }
 
+    // RSVP Status
+    if (!values.coming && !values.notComing) {
+      errors.coming = 'Please Select RSVP Status';
+    } else if (values.coming && values.notComing) {
+      errors.coming = 'Please Only Select One Box'
+    }
+
   return errors;
 }
