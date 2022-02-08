@@ -9,6 +9,7 @@ const Section = styled.section`
   height: 100%;
   padding: 1rem 0rem;
   // border: 3px solid blue;
+
 `;
 
 const Container = styled.div`
@@ -20,6 +21,8 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    padding: 0rem;
+    grid-template-rows: 75px;
   }
 `;
 
@@ -30,7 +33,6 @@ const ColumnLeft = styled.div`
   align-items: flex-start;
   line-height: 1.4;
   padding: 1rem 2rem;
-  order: ${({ reverse }) => (reverse ? '2' : '1')};
   text-align: center;
   margin: auto;
 
@@ -51,17 +53,22 @@ const ColumnLeft = styled.div`
   // p {
   //   margin-bottom: 2rem;
   // }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    p {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 const ColumnCenter = styled.div`
   padding: 1rem 2rem;
-  order: ${({ reverse }) => (reverse ? '1' : '2')};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   line-height: 1.4;
-  order: ${({ reverse }) => (reverse ? '2' : '1')};
   text-align: center;
   margin: auto;
 
@@ -80,7 +87,13 @@ const ColumnCenter = styled.div`
   // }
 
   @media (max-width: 768px) {
-    order: ${({ reverse }) => (reverse ? '2' : '1')};
+    padding: 0.5rem;
+    h1 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
   }
 
   }
@@ -88,13 +101,11 @@ const ColumnCenter = styled.div`
 
 const ColumnRight = styled.div`
   padding: 1rem 2rem;
-  order: ${({ reverse }) => (reverse ? '1' : '2')};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   line-height: 1.4;
-  order: ${({ reverse }) => (reverse ? '2' : '1')};
   text-align: center;
   margin: auto;
 
@@ -108,12 +119,15 @@ const ColumnRight = styled.div`
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
-  // p {
-  //   margin-bottom: 2rem;
-  // }
+  p {
+    margin-bottom: 0.5rem;
+  }
 
   @media (max-width: 768px) {
-    order: ${({ reverse }) => (reverse ? '2' : '1')};
+    padding: 1rem;
+    p {
+      margin-bottom: 0;
+    }
   }
 
   }

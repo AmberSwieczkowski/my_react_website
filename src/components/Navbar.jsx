@@ -26,6 +26,19 @@ function Navbar() {
 
   window.addEventListener("resize", showButton);
 
+  let goToRegistry = () => {
+ closeMobileMenu();
+ window.open('https://www.amazon.com/wedding/share/marcin-amber', '_blank');
+  };
+
+  let goToThePark = () => {
+    closeMobileMenu();
+    window.open(
+      'https://www.arkansasstateparks.com/parks/mount-magazine-state-park',
+      '_blank'
+    );
+  };
+
   return (
     <>
       <nav className="navbar no__print">
@@ -51,6 +64,16 @@ function Navbar() {
             <li className="nav__item">
               <Link to="/pictures" className="nav__links" onClick={closeMobileMenu}>
                 Pictures
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/" className="nav__links" onClick={goToThePark}>
+                Mount Magazine
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/" className="nav__links" onClick={goToRegistry}>
+                Registry
               </Link>
             </li>
             <li className="nav__item">
