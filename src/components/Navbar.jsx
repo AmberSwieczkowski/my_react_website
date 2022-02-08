@@ -66,12 +66,12 @@ function Navbar() {
                 Pictures
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item mobile__only">
               <Link to="/" className="nav__links" onClick={goToThePark}>
                 Mount Magazine
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item mobile__only">
               <Link to="/" className="nav__links" onClick={goToRegistry}>
                 Registry
               </Link>
