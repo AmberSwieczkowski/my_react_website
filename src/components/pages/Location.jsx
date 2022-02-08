@@ -41,7 +41,7 @@ export default function Location() {
           buttonSize='btn__xlarge'
           onClick={print}
         >
-          Print This Page
+          Print
         </Button>
         <Button
           toPage='/location'
