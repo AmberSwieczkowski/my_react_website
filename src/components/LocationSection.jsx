@@ -96,7 +96,6 @@ const ColumnCenter = styled.div`
     }
   }
 
-  }
 `;
 
 const ColumnRight = styled.div`
@@ -130,7 +129,6 @@ const ColumnRight = styled.div`
     }
   }
 
-  }
 `;
 
 const LocationSection = ({

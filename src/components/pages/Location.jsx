@@ -6,9 +6,10 @@ import { Button } from '../Button';
 import '../Button.css';
 import Footer from '../Footer';
 import {
+  DressCodeDetails,
   InfoDataCeremony,
   InfoDataReception,
-  InfoDetails,
+  LiveStreamData,
 } from '../LocationSectionData';
 import LocationSection from '../LocationSection';
 import '../Printer.css';
@@ -65,7 +66,8 @@ export default function Location() {
       <div className='printable'>
         <LocationSection {...InfoDataCeremony} />
         <LocationSection {...InfoDataReception} />
-        <LocationSection {...InfoDetails} />
+        <LocationSection {...DressCodeDetails} />
+        {/* <LocationSection {...LiveStreamData} /> */}
       </div>
       <Footer />
       <p className='print__only'>marcin-amber.com</p>
