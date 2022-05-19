@@ -1,10 +1,5 @@
 /** @format */
 
-// Vertical Images
-import ImageMarcin from './images/marcin-1.JPG';
-import ImageAmber from './images/amber-1.JPG';
-import ImageCouple from './images/us-18-vertical.JPG';
-
 export const InfoDataAmber = {
   title: 'The Bride',
   name: 'Amber',
@@ -14,7 +9,8 @@ export const InfoDataAmber = {
   parentsLocation: '...Currently in Louisiana',
   siblings: 'Younger Siblings: Marcus, James, Jazmine, Jonathan',
   buttonLabel: 'More',
-  image: ImageAmber,
+  image:
+    'https://i.ibb.co/Km14TGG/7-B75-F2-CE-04-F0-4-A39-881-C-8-B2-E3-FF526-A9.jpg',
   reverse: true,
   delay: 300,
 };
@@ -28,7 +24,7 @@ export const InfoDataMarcin = {
   parentsLocation: '...Currently in New York',
   siblings: 'Younger Sister: Eliza',
   buttonLabel: 'More',
-  image: ImageMarcin,
+  image: 'https://i.ibb.co/BTq4phF/marcin-1.jpg',
   reverse: false,
   delay: 100,
 };
@@ -40,7 +36,8 @@ export const InfoDataBoth = {
   parents: 'Dog: Charlie',
   siblings: 'Fun Fact: This picture was taken in a dangerous jungle in Mexico.',
   buttonLabel: 'More',
-  image: ImageCouple,
+  image:
+    'https://i.ibb.co/DL3bc7h/08-A4-A3-EC-23-E7-44-F5-849-A-8895-C637-A356.jpg',
   reverse: false,
   delay: 100,
 };

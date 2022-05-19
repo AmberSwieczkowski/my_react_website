@@ -13,17 +13,23 @@ const RsvpForm = () => {
   }
   return (
     <>
-    <div className="form-container">
-        <a href='/' className="close-btn">x</a>
-        <div className="form-content-left">
-            <img src="./images/us-8.jpeg" alt="Marcin and Amber" className="form-img" />
+      <div className='form-container'>
+        <a href='/' className='close-btn'>
+          x
+        </a>
+        <div className='form-content-left'>
+          <img
+            src='https://i.ibb.co/16WRS9s/us-5.jpg'
+            alt='Marcin and Amber'
+            className='form-img'
+          />
         </div>
         {!isSubmitted ? (
-        <RsvpFormSignup submitForm={submitForm} />
-      ) : (
-        <RsvpFormSuccess />
-      )}
-    </div>
+          <RsvpFormSignup submitForm={submitForm} />
+        ) : (
+          <RsvpFormSuccess />
+        )}
+      </div>
     </>
   );
 };

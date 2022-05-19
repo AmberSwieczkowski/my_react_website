@@ -9,11 +9,9 @@ import {
   DressCodeDetails,
   InfoDataCeremony,
   InfoDataReception,
-  LiveStreamData,
 } from '../LocationSectionData';
 import LocationSection from '../LocationSection';
 import '../Printer.css';
-import { Link } from 'react-router-dom';
 
 export default function Location() {
   let print = () => {

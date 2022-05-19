@@ -9,12 +9,12 @@ const useRsvpForm = (callback, validate) => {
     email: '',
     guests: '',
     coming: false,
-    notComing: false
+    notComing: false,
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({
       ...values,
@@ -22,28 +22,28 @@ const useRsvpForm = (callback, validate) => {
     });
   };
 
-  const handleStatus = e => {
+  const handleStatus = (e) => {
     const { name } = e.target;
     if (e.target.checked) {
       setValues({
         ...values,
         [name]: true,
-      })
+      });
     } else {
       setValues({
         ...values,
         [name]: false,
-      })
+      });
     }
-  }
+  };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
   };
 
-  const encode = data => {
+  const encode = (data) => {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
@@ -58,11 +58,17 @@ const useRsvpForm = (callback, validate) => {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'rsvp', ...values }),
       })
-        // .then(() => alert('Success!'))
         .then(() => callback())
         .then(() => setIsSubmitting(false))
         .then(() =>
-          setValues({ firstname: '', lastname: '', email: '', guests: '', coming: false, notComing: false })
+          setValues({
+            firstname: '',
+            lastname: '',
+            email: '',
+            guests: '',
+            coming: false,
+            notComing: false,
+          })
         )
         .catch((error) => alert(error));
     }

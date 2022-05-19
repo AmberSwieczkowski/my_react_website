@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import styled, { css } from 'styled-components/macro';
-import { Button } from './Button';
-import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
 const MainSection = styled.section`
@@ -90,10 +88,6 @@ const MainContent = styled.div`
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
   }
-`;
-
-const Arrow = styled(IoMdArrowRoundForward)`
-  margin-left: 0.5rem;
 `;
 
 const SliderButtons = styled.div`
