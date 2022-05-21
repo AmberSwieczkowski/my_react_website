@@ -8,7 +8,7 @@ const STYLES = ['btn__primary', 'btn__secondary', 'btn__outline', 'btn__print'];
 
 const SIZES = ['btn__medium', 'btn__large', 'btn__xlarge'];
 
-const PAGES = ['/', '/location', '/pictures', '/rsvp'];
+const PAGES = ['/', '/location', '/pictures', '/rsvp', '/upload'];
 
 export const Button = ({
   children,

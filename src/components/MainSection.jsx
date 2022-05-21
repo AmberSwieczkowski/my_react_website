@@ -27,6 +27,14 @@ function MainSection() {
         >
           RSVP
         </Button>
+        <Button
+          className='btns'
+          buttonStyle='btn__primary'
+          buttonSize='btn__large'
+          toPage='/upload'
+        >
+          Upload
+        </Button>
       </div>
     </div>
   );
