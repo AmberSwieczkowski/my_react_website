@@ -7,47 +7,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.location,
-.rsvp {
+.home {
   display: flex;
   height: 80vh;
   align-items: center;
   justify-content: center;
-}
-
-.home {
   font-size: 3rem;
-}
-
-.location {
-  background-image: url('https://upload.travelawaits.com/ta/uploads/2021/04/cameron-bluff-overlook-at-moub85242-1024x672.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  color: #fff;
-  font-size: 100px;
-  /* border: 2px solid blue; */
-}
-
-.btn_print_container {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  /* height: 80px; */
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.rsvp {
-  background: url('https://www.arkansas.com/sites/default/files/styles/open_graph_teaser/public/2019-09/HERO_Cameron%20Bluff%20Mt%20Magazine.jpg?itok=SWnCv2le')
-    center center/cover no-repeat;
-  background-color: #131313;
-  /* border: 2px solid red; */
-}
-
-@media (max-width: 1200px) {
-  .rsvp {
-    height: 100vh;
-    background-size: cover;
-  }
 }

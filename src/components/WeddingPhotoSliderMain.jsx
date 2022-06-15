@@ -5,10 +5,11 @@ import styled, { css } from 'styled-components/macro';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
 const MainSection = styled.section`
-  height: 90vh;
+  height: 100vh;
   max-height: 1100px;
   position: relative;
   overflow: hidden;
+  top: 0;
 `;
 
 const MainWrapper = styled.div`
@@ -63,31 +64,6 @@ const MainImage = styled.img`
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-`;
-
-const MainContent = styled.div`
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  max-width: 1600px;
-  width: calc(100% - 100px);
-  color: #fff;
-
-  h1 {
-    font-size: clamp(1rem, 8vw, 2rem);
-    font-weight: 400;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    text-align: center;
-    margin-bottom: 0.8rem;
-  }
-
-  p {
-    margin-bottom: 1.2rem;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-    text-align: center;
-  }
 `;
 
 const SliderButtons = styled.div`
@@ -149,7 +125,6 @@ const Main = ({ slides }) => {
     }
 
     setCurrent(current === length - 1 ? 0 : current + 1);
-    //   console.log(current)
   };
 
   const prevSlide = () => {
@@ -158,7 +133,6 @@ const Main = ({ slides }) => {
     }
 
     setCurrent(current === 0 ? length - 1 : current - 1);
-    //   console.log(current)
   };
 
   if (!Array.isArray(slides) || slides.length <= 0) {
@@ -172,19 +146,7 @@ const Main = ({ slides }) => {
             <MainSlide key={index}>
               {index === current && (
                 <MainSlider>
-                  <MainImage src={slide.image} alt={slide.alt} />
-                  <MainContent>
-                    <h1>{slide.title}</h1>
-                    <p>{slide.price}</p>
-                    {/* <Button
-                      to={slide.path}
-                      primary='true'
-                      style={{ maxWidth: '160px' }}
-                    >
-                      {slide.label}
-                      <Arrow />
-                    </Button> */}
-                  </MainContent>
+                  <MainImage src={slide.image} />
                 </MainSlider>
               )}
             </MainSlide>
