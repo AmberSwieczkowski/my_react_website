@@ -5,11 +5,12 @@ import styled, { css } from 'styled-components/macro';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
 const MainSection = styled.section`
-  height: 100vh;
+  height: 95vh;
   max-height: 1100px;
   position: relative;
   overflow: hidden;
   top: 0;
+  z-index: 5;
 `;
 
 const MainWrapper = styled.div`
